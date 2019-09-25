@@ -1,0 +1,251 @@
+/*--------------GENERAL--------------*/
+
+body {
+	background-color: white;
+	font-family: PT sans, sans-serif;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*--------------HEADER--------------*/
+
+/*-----__NAVIGATION__-----*/
+
+
+nav {
+	display: flex;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid 0.1em;
+	border-bottom-color: black;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav h2 {
+	font-family: PT sans narrow, sans-serif;
+	font-weight: 200;
+	margin: 0;
+}
+
+nav h2 a {
+	color: black;
+	text-decoration: none;
+}
+
+nav button {
+	width: 0;
+	height: 0;
+	border-top: solid 5px #000;
+	border-left: solid transparent 5px;
+	border-right: solid transparent 5px;
+}
+
+nav .profilepic {
+	width: 50%;
+	height: 50%;
+	padding: 0 1em;
+}
+
+nav .profilepic img {
+	width: 50px;
+	height: 50px;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border-top: 0.6rem solid #000;
+	border-left: 0.6rem solid transparent;
+	border-right: 0.6rem solid transparent;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	margin: 0.2rem 1em;
+}
+
+.navdesktop a {
+	color: black;
+	text-decoration: none;
+}
+
+.navdesktop li {
+	padding: 0.5em 1em;
+}
+
+/*--------------MAIN--------------*/
+
+main {
+	width: 95%;
+	display: block;
+	margin: 5% auto 0;
+	max-width: 50em;
+}
+
+.foodtruck {
+	width: 100%;
+	display: block;
+	margin: 1em auto 0;
+	max-width: 1000px;
+}
+
+p {
+	font-size: 1.2em;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+/*-----__HOMEPAGE__-----*/
+
+/*-----DETAILPAGE-----*/
+
+
+h1 {
+	font-weight: 500;
+	margin: 5% 0 0;
+	font-size: 2em;
+}
+
+main .profilepic {
+	width: 3em;
+	height: 3em;
+	margin-right: 20px;
+}
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+main .title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.owner {
+	display: flex;
+	align-items: center;
+	min-width: 75%;
+	margin-top: 0;
+}
+
+.star {
+	width: 10%;
+	height: 10%;
+	margin-top: 5%;
+}
+
+.knop {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	width: 10em;
+	padding: 1em 2em;
+	display: block;
+	margin: 2em auto;
+	text-align: center;
+}
+
+main h4 {
+	color: rgb(97, 184, 101);
+	font-weight: 500;
+}
+
+.foodsticker {
+	display: flex;
+	align-items: center;
+}
+
+.foodstickers {
+	width: 2em;
+	height: 2em;
+	margin-right: 1em;
+}
+
+h5 {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+h6 {
+	margin: 0 auto 2em;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	color: rgb(98, 156, 175);
+}
+
+/*--------------FOOTER--------------*/
+
+footer {
+	background-color: black;
+	color: white;
+	font-family: Helvetica, sans-serif;
+	height: 50em;
+}
+
+footer h2 {
+	font-weight: 500;
+}
+
+footer .profile {
+	display: flex;
+	align-items: center;
+	padding: 2em 2em 1em;
+}
+
+footer ul a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+footer li {
+	padding: 1em;
+	border-bottom: solid 0.06em;
+	margin-right: 1em;
+}
+
+footer li:last-child {
+	border-bottom: 0;
+}
+
+
+@media screen and (min-aspect-ratio: 1/1) {
+	.triangle {
+		display: none;
+	}
+
+	footer {
+		display: none;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	
+	.foodtruck {
+		margin-top: 6em;
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.navdesktop {
+		display: none;
+	}
+}
